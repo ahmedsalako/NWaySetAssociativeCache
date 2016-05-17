@@ -1,5 +1,6 @@
 package com.ahmedsalako.cache.interfaces;
 
+import com.ahmedsalako.cache.enums.CacheChanges;
 import com.ahmedsalako.cache.extensions.Key;
 
 /**
@@ -22,4 +23,11 @@ public interface EvictionStrategy<TTag>
 	 * @return Key{TTag} the key object of an evictable element
 	 */
 	Key<TTag> getEvictableKey();
+	
+	/**
+	 * accept cache change notification
+	 * @param key
+	 * @param changes
+	 */
+	void OnCacheChange(Key<TTag> key, CacheChanges changes);
 }
