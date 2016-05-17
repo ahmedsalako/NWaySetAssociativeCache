@@ -32,7 +32,7 @@ public final class Key<TTag>
 	 * @param tag
 	 * @return
 	 */
-	public static <TTag> Key<TTag> New(TTag tag){
+	public static <TTag> Key<TTag> getInstance(TTag tag){
 		return new Key(tag);
 	}
 	

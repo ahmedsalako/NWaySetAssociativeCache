@@ -46,7 +46,7 @@ public class LRUEvictionStrategy<TTag> implements EvictionStrategy<TTag>
 	 * A method that receives change tracking notification from the 
 	 */
 	@Override
-	public void OnCacheChange(Key<TTag> key, CacheChanges changes) {
+	public void onCacheChange(Key<TTag> key, CacheChanges changes) {
 		if(changes == CacheChanges.Add || 
 				changes == CacheChanges.Access){
 			keys.remove(key); //remove existing entry to ensure no double entry

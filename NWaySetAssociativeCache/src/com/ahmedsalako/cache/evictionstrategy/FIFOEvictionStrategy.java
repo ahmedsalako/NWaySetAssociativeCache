@@ -42,7 +42,7 @@ public class FIFOEvictionStrategy<TTag> implements EvictionStrategy<TTag>
 	}
 
 	@Override
-	public void OnCacheChange(Key<TTag> key, CacheChanges changes) {
+	public void onCacheChange(Key<TTag> key, CacheChanges changes) {
 		if(changes == CacheChanges.Add){
 			keys.remove(key);
 			keys.addLast(key);

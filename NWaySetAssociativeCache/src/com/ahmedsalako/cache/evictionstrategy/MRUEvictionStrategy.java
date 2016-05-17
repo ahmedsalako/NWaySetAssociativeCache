@@ -41,7 +41,7 @@ public class MRUEvictionStrategy<TTag> implements EvictionStrategy<TTag>
 	 * accept cache change notification
 	 */
 	@Override
-	public void OnCacheChange(Key<TTag> key, CacheChanges changes) {
+	public void onCacheChange(Key<TTag> key, CacheChanges changes) {
         if(changes == CacheChanges.Access || 
                 changes == CacheChanges.Add)
             {

@@ -29,5 +29,5 @@ public interface EvictionStrategy<TTag>
 	 * @param key
 	 * @param changes
 	 */
-	void OnCacheChange(Key<TTag> key, CacheChanges changes);
+	void onCacheChange(Key<TTag> key, CacheChanges changes);
 }

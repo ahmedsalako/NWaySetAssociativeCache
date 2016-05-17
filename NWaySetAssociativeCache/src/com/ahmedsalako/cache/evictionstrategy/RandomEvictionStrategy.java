@@ -45,7 +45,7 @@ public class RandomEvictionStrategy<TTag> implements EvictionStrategy<TTag>
 	 * should be used by the eviction strategy for initialisation purpose
 	 */
 	@Override
-	public void OnCacheChange(Key<TTag> key, CacheChanges changes) {
+	public void onCacheChange(Key<TTag> key, CacheChanges changes) {
 		if(changes == CacheChanges.Add){
 			keys.remove(key);
 			keys.add(key);
